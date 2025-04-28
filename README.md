@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Shoreline_Analysis
 =======
 
