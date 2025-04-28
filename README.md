@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 # Shoreline_Analysis
-website for my shoreline detection model.
 =======
 
 Web app for my shoreline project
