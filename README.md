@@ -1,4 +1,4 @@
 # Shoreline_Analysis
 =======
-![My Logo](Images/111123.JPG)
+![Description of Image](Images/111123.JPG)
 Web app for my shoreline project
