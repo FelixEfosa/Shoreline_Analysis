@@ -6,6 +6,7 @@ import cv2
 import torch
 from torchvision import transforms
 from flask import Flask, request, render_template, jsonify, send_file, session, url_for
+from flask_cors import CORS
 import geopandas as gpd
 import shutil
 from shapely import ops
@@ -41,7 +42,10 @@ from utils import (
 
 )
 
-app = Flask(__name__)
+# app = Flask(__name__)
+app = Flask(__name__, static_folder="static", template_folder="templates")
+CORS(app)
+
 app.secret_key = "your_secret_key_here"
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -308,5 +312,8 @@ def compare_shorelines():
             "trace": traceback.format_exc()
         }), 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Render uses PORT env var
+    app.run(host="0.0.0.0", port=port)
