@@ -18,7 +18,6 @@ Built with Flask, Leaflet, LocalTileServer, and a custom shoreline detection mod
 - Fully containerized (Docker support)
 - Ready for Render deployment
 
-
 ## 🚀 Demo
 
 ![App Demo](assets/demo.gif)
@@ -31,10 +30,32 @@ Built with Flask, Leaflet, LocalTileServer, and a custom shoreline detection mod
 2. Install dependencies: pip install -r requirements.txt
 3. python app.py
 
-
 ## 📁 Project Structure
 
-shoreline-analysis/ │ ├── app.py # Main Flask app ├── utils/ # Utility functions (image, geo processing) ├── templates/ # HTML templates ├── static/ # Static files (CSS, JS) ├── assets/ # Images for README ├── requirements.txt # Python dependencies ├── Dockerfile # (Optional) Docker container ├── Procfile # For Gunicorn (Render deployment) ├── render.yaml # Render deployment config └── README.md # Project documentation
+shoreline-analysis/ │ ├── app.py # Main Flask app ├── utils/ # Utility functions (image, geo processing) ├── templates/ # HTML templates ├── static/ # Static files (CSS, JS) ├── assets/ # Images for README ├── requirements.txt # Python dependencies ├── Procfile # For Gunicorn (Render deployment) ├── render.yaml # Render deployment config └── README.md # Project documentation
+
+## 🛠️ Built With
+
+- Python
+- Flask
+- Leafmap (Leaflet + Python)
+- Geopandas
+- Torch (PyTorch)
+- Localtileserver
+- Rasterio
+- Shapely
+- Gunicorn
+- Docker (optional)
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Please open an issue or submit a pull request for improvements, new features, or bug fixes.
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
 ## 🙏 Acknowledgements
 
 - [Leafmap](https://leafmap.org/)
